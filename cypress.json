@@ -1,0 +1,14 @@
+{
+    "projectId": "qvki3r",
+    "baseUrl": "https://piotrmr20.github.io/BMI_app/",
+    "retries": 2,
+    "watchForFileChanges": false,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+    "reportFilename": "[status]_[datetime]-[name]-report",
+    "timestamp": "isoDateTime",
+    "overwrite": false,
+    "html": true,
+    "json": true
+    }
+}
