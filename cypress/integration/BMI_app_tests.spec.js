@@ -10,9 +10,7 @@ context('Test automation project based on my BMI app', () => {
                 cy.visit('/');
                 cy.url().should('contain', 'piotrmr20.github.io/BMI_app/');
                 cy.fixture('messages.json').as('weightOrHeightMessage');
-        
     })
-        
         it('Test 1 of main modules displaying', () => {
             cy.visit('/');
             cy.url().should('contain', 'piotrmr20.github.io/BMI_app/');
@@ -137,55 +135,6 @@ context('Test automation project based on my BMI app', () => {
             fields.selectHeightOutputField().should('contain', 189);
         })
 
-
-
-        // it('Search for Wikipedia and click first dropdown result', ()=> {
-        //     google.typeInSearchInputWithClear('wikipedia').should('have.value', 'wikipedia').wait(3000);
-        //     cy.get(':nth-child(1) > .eIPGRd > .pcTkSc > .wM6W7d > span').click();
-        //     cy.get('div[data-async-context="query:wikipedia"]').should('be.visible');
-        //     // cy.get('.LLD4me').click();
-        //     // cy.get('.FPdoLc > center > .gNO89b').click();
-        // })
-        // it('Search for Wikipedia and click first dropdown result by eq', ()=> {
-        //     cy.get('.gLFyf').clear().type('wikipedia').wait(3000);
-        //     cy.get('.wM6W7d > span').eq(0).click();
-        //     // cy.get('.LLD4me').click();
-        //     // cy.get('.FPdoLc > center > .gNO89b').click();
-        // })
-        // it('Search fraze from fraze fixture', function () {
-        //     cy.log(searchFraze[0].fraze);
-        //     cy.get('.gLFyf').clear().type(searchFraze[0].fraze).should('have.value', searchFraze[0].fraze);
-        //     cy.get('.gLFyf').clear().type(searchFraze[1].fraze).should('have.value', searchFraze[1].fraze);
-        // } )
-        // it('Search fraze from fraze fixture by function', function () {
-        //     // cy.fixture('searchFraze.json').as('frazesByAlias');
-        //     cy.get('.gLFyf').as('input');
-        //     cy.log(this.frazesByAlias[0].fraze);
-        //     cy.get('@input').clear().type(this.frazesByAlias[0].fraze).type('{enter}');//should('have.value', searchFraze[0].fraze);  wpisuje z fixtures i klika enter
-        //     cy.url.should('contain', searchFraze[0].fraze);
-        //     // cy.url.should('contain', this.searchByAlias[0].fraze);  alternatywnie
-        //     // cy.get('@input').clear().type(this.frazesByAlias[1].fraze).should('have.value', searchFraze[1].fraze);  inna fraza z fixtures
-
-           
-        // } )
-        // it('Search fraze by then', ()=> {
-        //     cy.fixture('searchFraze').then((frazes) =>{
-        //         cy.get('.gLFyf').type(frazes[0].fraze);
-        //     }) //.clear(); bez tego na dole
-        //     cy.fixture('searchFraze').as('fraz');
-        //     cy.get('.gLFyf').clear();
-        //     cy.get('@fraz').then((frazes)=>{
-        //         cy.get('.gLFyf').type(frazes[1].fraze);
-        //     })
-        // })
-
     })
-    // describe('WP test', () => {
-    //     it('Test 2', () => {
-    //         cy.visit('www.wp.pl');
-    //         cy.url().should('contain', 'www.wp.pl');
-    //         cy.get('body > div > div > div > div > div > button:nth-child(2)').click();
-    //     })
-    // }
-    // )
+    
 })
